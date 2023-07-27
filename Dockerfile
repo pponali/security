@@ -1,4 +1,4 @@
 FROM openjdk:17
 EXPOSE 8080
-ADD build/libs/*.jar spring-boot-aws.jar
+COPY build/libs/spring-boot-aws.jar.jar spring-boot-aws.jar
 ENTRYPOINT ["java", "-jar", "spring-boot-aws.jar"]
