@@ -40,3 +40,11 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+tasks.jar {
+    archiveFileName.set("spring-boot-aws.jar")
+}
+
+tasks.bootJar {
+    archiveFileName.set("spring-boot-aws-plain.jar")
+}
